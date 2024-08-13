@@ -1,0 +1,17 @@
+@use './typography.scss' as t;
+
+h1 {
+  @include t.text-preset-1;
+}
+
+h2 {
+  @include t.text-preset-2;
+}
+
+h3 {
+  @include t.text-preset-3;
+}
+
+h4 {
+  @include t.text-preset-4;
+}

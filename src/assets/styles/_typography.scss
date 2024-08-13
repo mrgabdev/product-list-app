@@ -1,0 +1,28 @@
+@mixin text-preset($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: 0px;
+}
+
+@mixin text-preset-1 {
+  @include text-preset(56px, 120%);
+}
+
+@mixin text-preset-2 {
+  @include text-preset(24px, 125%);
+}
+
+@mixin text-preset-3 {
+  @include text-preset(16px, 150%);
+  font-weight: 600;
+}
+
+@mixin text-preset-4 {
+  @include text-preset(14px, 150%);
+  font-weight: 400;
+}
+
+@mixin text-preset-4-semi-bold {
+  @include text-preset(14px, 150%);
+  font-weight: 600;
+}
