@@ -1,4 +1,32 @@
 @use './typography.scss' as t;
+@use './colors.scss' as c;
+@use './spacing.scss' as s;
+
+:root {
+  --red: #{c.$red};
+  --rose-900: #{c.$rose-900};
+  --rose-500: #{c.$rose-500};
+  --rose-400: #{c.$rose-400};
+  --rose-300: #{c.$rose-300};
+  --rose-100: #{c.$rose-100};
+  --rose-50: #{c.$rose-50};
+  --green: #{c.$green};
+  --black: #{c.$black};
+  --white: #{c.$white};
+
+  --spacing-1100: #{s.$spacing-1100};
+  --spacing-500: #{s.$spacing-500};
+  --spacing-400: #{s.$spacing-400};
+  --spacing-300: #{s.$spacing-300};
+  --spacing-200: #{s.$spacing-200};
+  --spacing-150: #{s.$spacing-150};
+  --spacing-100: #{s.$spacing-100};
+  --spacing-50: #{s.$spacing-50};
+}
+
+body {
+  background-color: var(--rose-50);
+}
 
 h1 {
   @include t.text-preset-1;

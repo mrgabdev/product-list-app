@@ -1,0 +1,36 @@
+.products__item {
+  display: flex;
+  flex-direction: column;
+
+  & .item__title {
+    order: 2;
+  }
+
+  & .item__image {
+    order: 0;
+    position: relative;
+
+    margin-bottom: 16px;
+
+    & .image__button {
+      width: 100%;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  & .item__food {
+    order: 1;
+  }
+
+  & .item__price {
+    order: 3;
+  }
+}

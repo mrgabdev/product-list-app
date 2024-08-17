@@ -1,0 +1,49 @@
+@use '../assets/styles/typography' as t;
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  padding: clamp(24px, 0.447rem + 5.614vw, 88px) clamp(24px, 1.237rem + 1.404vw, 40px);
+  gap: var(--spacing-400);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.products__section-title {
+  @include t.text-preset-1;
+  margin-bottom: var(--spacing-400);
+}
+
+.products__list {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cart {
+  max-width: 384px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: var(--white);
+  border-radius: var(--spacing-150);
+  padding: var(--spacing-300);
+
+  position: sticky;
+
+  top: 20px; /* El carrito se queda pegado 20px desde el top */
+  align-self: flex-start; /* Alineamos la sección al inicio del contenedor */
+}
+
+.cart img {
+  align-self: center;
+}
