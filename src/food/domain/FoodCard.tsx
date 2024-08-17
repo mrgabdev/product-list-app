@@ -17,8 +17,8 @@ export const FoodCard = ({ category, image, name, price }: Food) => {
           <AddToCart />
         </div>
       </div>
-      <p className={styles.item__food}>{category}</p>
-      <p className={styles.item__price}>{price}</p>
+      <p className={styles.item__type}>{category}</p>
+      <p className={styles.item__price}>${price}</p>
     </div>
   )
 }

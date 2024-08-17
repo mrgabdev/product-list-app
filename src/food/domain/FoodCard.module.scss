@@ -26,11 +26,16 @@
     }
   }
 
-  & .item__food {
+  & .item__type {
     order: 1;
+    color: var(--rose-500);
   }
 
   & .item__price {
     order: 3;
+    color: var(--red);
+    font-size: var(--spacing-200, 16px);
+    font-weight: 600;
+    line-height: normal;
   }
 }
