@@ -1,0 +1,48 @@
+@use '../../assets/styles/typography' as t;
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 160px;
+  height: 44px;
+  width: 100%;
+  padding: var(--spacing-150, 12px);
+
+  gap: var(--spacing-100, 8px);
+
+  background-color: var(--white);
+  border: 1px solid var(--rose-400);
+  border-radius: 999px;
+}
+
+.add-button__text {
+  color: var(--rose-900);
+  @include t.text-preset-4-semi-bold;
+}
+
+// Hover states
+
+.add-button:hover {
+  cursor: pointer;
+  border-color: var(--red);
+}
+
+.add-button__text:hover {
+  color: var(--red);
+}
+
+.add-button--active {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+  justify-content: space-between;
+}
+
+.add-button__icon:hover > path:nth-child(2) {
+  fill: var(--white);
+}
+
+.add-button__icon:hover > path:nth-child(3) {
+  fill: none;
+}
