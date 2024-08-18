@@ -14,7 +14,7 @@ export const FoodCard = ({ category, image, name, price }: Food) => {
           <img src={image.desktop} alt='Waffle image' />
         </picture>
         <div className={styles.image__button}>
-          <AddToCart />
+          <AddToCart name={name} price={price} thumbnail={image.thumbnail} />
         </div>
       </div>
       <p className={styles.item__type}>{category}</p>
